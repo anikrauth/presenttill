@@ -2,7 +2,7 @@ import GiftIdeasSection from '@/components/GiftIdeasSection'
 import HeroSection from '@/components/HeroSection'
 import UpCommingSection from '@/components/UpcommingSection'
 import { Metadata } from 'next'
-import Image from 'next/image'
+// import Image from 'next/image'
 
 export const metadata: Metadata = {
   title: 'Present till &#8211; Present till',
