@@ -25,4 +25,57 @@ query Get_Header_menu {
 `;
 
 
-export {GET_SIDEBAR_MENU};
+const GET_ALL_PAGES = gql`
+ query Get_All_Pages {
+  pages {
+    nodes {
+      id
+      title
+      slug
+      featuredImage{
+        node{
+          sourceUrl
+        }
+      }
+    }
+  }
+}
+`;
+
+const GET_HOME_DATA = gql`
+query Get_All_Pages {
+  homePage(id: "home", idType: SLUG) {
+    id
+    name
+    homePage {
+      typesOfGifts {
+        ... on Page {
+          id
+          title
+          slug
+          featuredImage {
+            node {
+              sourceUrl
+            }
+          }
+        }
+      }
+      occasionsAndHolidays {
+        ... on Page {
+          id
+          title
+          slug
+          featuredImage {
+            node {
+              sourceUrl
+            }
+          }
+        }
+      }
+    }
+  }
+  }
+`
+
+
+export {GET_SIDEBAR_MENU, GET_ALL_PAGES, GET_HOME_DATA};

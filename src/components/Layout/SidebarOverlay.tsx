@@ -1,6 +1,5 @@
 'use client'
 import { HiXMark, HiMiniChevronRight, HiMiniChevronDown } from "react-icons/hi2";
-import Logo from "../Logo";
 import { useQuery } from "@tanstack/react-query";
 import client from "@/lib/ApolloClient";
 import { GET_SIDEBAR_MENU } from '@/lib/Query';
