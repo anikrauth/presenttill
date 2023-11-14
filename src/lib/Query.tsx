@@ -77,5 +77,35 @@ query Get_All_Pages {
   }
 `
 
+const GET_HOME_PRODUCTS = gql`
+    query Get_Home_Products {
+  homePage(id: "home", idType: SLUG) {
+    id
+    name
+    homePage {
+      suggestingProducts {
+        ... on Produkt {
+          id
+          title
+          slug
+          content
+          categories{
+            nodes{
+              id
+              name
+            }
+          }
+          featuredImage{
+            node{
+              sourceUrl
+            }
+          }
+        }
+      }
+    }
+  }
+}
+`;
 
-export {GET_SIDEBAR_MENU, GET_ALL_PAGES, GET_HOME_DATA};
+
+export {GET_SIDEBAR_MENU, GET_ALL_PAGES, GET_HOME_DATA, GET_HOME_PRODUCTS};

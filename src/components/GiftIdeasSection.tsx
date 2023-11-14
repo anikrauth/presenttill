@@ -23,32 +23,32 @@ export default function GiftIdeasSection() {
 
     // const {homePage} = data?.homePage
     const homePage = data?.homePage?.homePage
-    console.log(data)
+
 
 
     return (
         <>
-            <div className=" bg-primary_color pb-[100px]">
-                <div className="Section_one py-[100px]  px-[100px]">
+            <div className=" bg-primary_color pb-[40px] md:pb-[80] lg:pb-[100px]">
+                <div className="Section_one py-[40px] md:py-[60px] lg:py-[100px] px-5 md:px-[40px] lg:px-[60px] xl:px-[100px]">
 
                     <div className="sec_header flex justify-between items-center text-white_color">
                         <div>
-                            <h2 className="text-[32px] font-bold">Different types of <span className="text-secondary_color">gifts</span></h2>
-                            <p className="text-[16px] font-normal pt-[10px]">Use the pages below when you know what type of gift you are looking for</p>
+                            <h2 className="text-[22px] md:text-[32px] font-bold">Different types of <span className="text-secondary_color">gifts</span></h2>
+                            <p className=" text-[14px] md:text-[16px] font-normal pt-[10px]">Use the pages below when you know what type of gift you are looking for</p>
                         </div>
-                        <Link className="text-[18px] font-semibold text-secondary_color" href="/">
+                        <Link className="md:block hidden text-[18px] font-semibold text-secondary_color" href="/">
                             View All
                         </Link>
                     </div>
 
-                    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 pt-[40px]">
+                    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[10px] md:gap-5 pt-[40px]">
                         {
                             homePage?.typesOfGifts?.map((item: any) => {
                                 return(
-                                    <Link href="/" key={item?.id} className="item bg-2nd_section_color hover:bg-primary_color hover:border-2nd_section_color border-2 transition-all block border-2nd_section_color p-5 text-white_color">
+                                    <Link href="/" key={item?.id} className="overflow-hidden item bg-2nd_section_color hover:bg-primary_color hover:border-2nd_section_color border-2 transition-all block border-2nd_section_color p-2 md:p-5 text-white_color">
                                         {
                                             item?.featuredImage ? (
-                                                <Image className="" src={item?.featuredImage?.node?.sourceUrl} width="300" height="300" alt="card Image" />
+                                                <Image className="h-[100px] md:h-[200px] object-cover" src={item?.featuredImage?.node?.sourceUrl} width="300" height="300" alt="card Image" />
                                             ): (
                                                 <div
                                                     className="flex items-center justify-center h-48 mb-4 bg-gray-300 rounded dark:bg-gray-700">
@@ -64,7 +64,7 @@ export default function GiftIdeasSection() {
                                             )
                                         }
 
-                                        <h3 className="text-[18px] font-medium pt-3 ">{item?.title}</h3>
+                                        <h3 className="text-[14px] md:text-[18px] font-medium pt-0 md:pt-3 ">{item?.title}</h3>
                                     </Link>
                                 )
                             })
@@ -73,10 +73,10 @@ export default function GiftIdeasSection() {
                     </div>
                 </div>
                 {/* New section */}
-                <div className="bg-[#EFB7B1] mx-[100px] py-[40px] rounded px-[40px] flex justify-between items-center">
+                <div className="bg-[#EFB7B1] mx-5 md:mx-[60px] lg:mx-[100px] py-[40px] rounded px-5 md:px-[40px] md:flex justify-between items-center">
                     <div className="info text-white_color w-full md:w-[60%]">
                         <h4 className="text-secondary_color  bg-primary_color p-[5px] w-[140px] md:flex justify-center items-center text-[16px] font-normal rounded ">Presenttill.nu</h4>
-                        <h2 className="py-[20px] text-[32px] font-bold ">It pays to visit <span className="text-secondary_color">Presenttill.nu</span> often</h2>
+                        <h2 className="py-[20px] text-[24px] md:text-[32px] font-bold ">It pays to visit <span className="text-secondary_color">Presenttill.nu</span> often</h2>
                         <p className="text-[16px] font-[400] text-primary_color pb-[10px]">The page is updated every day with new gift ideas and <span> <Link className="font-[600] hover:underline" href="/julklappar/">Christmas gift tips</Link> </span> before Christmas.</p>
                         <p className="text-[16px] font-[400] text-primary_color">Before Christmas Eve 2021, you will be able to see over 300 Christmas gift tips here <span> <Link className="font-[600]  hover:underline" href="/">presenttill.nu</Link> </span> which will become the leading gift site on the net.</p>
                     </div>
@@ -89,30 +89,30 @@ export default function GiftIdeasSection() {
 
             {/* */}
             <div className=" bg-2nd_section_color ">
-                <div className="Section_one py-[100px] px-[100px]">
+                <div className="Section_one py-[40px] md:py-[60px] lg:py-[100px] px-5 md:px-[40px] lg:px-[60px] xl:px-[100px]">
 
                     <div className="sec_header flex justify-between items-center text-white_color">
                         <div>
-                            <h2 className="text-[32px] font-bold">Gift ideas for various <span className="text-secondary_color">occasions and holidays</span></h2>
-                            <p className="text-[16px] font-normal pt-[10px]"> Here we collect various special occasions and holidays and give you suitable gift tips based on events</p>
+                            <h2 className="text-[22px] md:text-[32px] font-bold">Gift ideas for various <span className="text-secondary_color">occasions and holidays</span></h2>
+                            <p className="text-[14px] md:text-[16px] font-normal pt-[10px]"> Here we collect various special occasions and holidays and give you suitable gift tips based on events</p>
 
                         </div>
-                        <Link className="text-[18px] font-semibold text-secondary_color" href="/">
+                        <Link className="md:block hidden text-[18px] font-semibold text-secondary_color" href="/">
                             View All
                         </Link>
                     </div>
 
-                    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 pt-[40px]">
+                    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[10px] md:gap-5 pt-[40px]">
                         {
                             homePage?.occasionsAndHolidays?.map((item: any) => {
                                 return(
-                                    <Link href="/" key={item?.id} className="item bg-primary_color hover:bg-2nd_section_color hover:border-primary_color border-2 transition-all block border-primary_color p-5 text-white_color">
+                                    <Link href="/" key={item?.id} className="overflow-hidden item bg-primary_color hover:bg-2nd_section_color hover:border-primary_color border-2 transition-all block border-primary_color p-2 md:p-5 text-white_color">
                                         {
                                             item?.featuredImage ? (
-                                                <Image className=" h-[200px] object-cover" src={item?.featuredImage?.node?.sourceUrl} width="300" height="300" alt="card Image" />
+                                                <Image className=" h-[100px] md:h-[200px] object-cover" src={item?.featuredImage?.node?.sourceUrl} width="300" height="300" alt="card Image" />
                                             ): (
                                                 <div
-                                                    className="flex items-center justify-center h-48 mb-4 bg-gray-300 rounded dark:bg-gray-700">
+                                                    className="flex items-center justify-center h-48  bg-gray-300 rounded dark:bg-gray-700">
                                                     <svg className="w-10 h-10 text-gray-200 dark:text-gray-600"
                                                          aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                                                          fill="currentColor" viewBox="0 0 16 20">
@@ -125,7 +125,7 @@ export default function GiftIdeasSection() {
                                             )
                                         }
 
-                                        <h3 className="text-[18px] font-medium pt-3">{item?.title}</h3>
+                                        <h3 className="text-[14px] md:text-[18px] font-medium pt-3">{item?.title}</h3>
                                     </Link>
                                 )
                             })
