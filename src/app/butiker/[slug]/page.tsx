@@ -1,19 +1,19 @@
-import SingleProduct from "@/components/SingleProduct";
+import Breadcumb from "@/components/common/Breadcumb";
+import ButikerSection from "@/components/ButikerSection";
+
 
 interface Props {
     params: {
         slug: string
     }
 }
-
-
 export async function generateMetadata({ params: { slug } }: Props): Promise<any> {
 
     return {
-        title: `${slug} - Presenttill`,
+        title: `${slug} Store - Presenttill`,
         description: 'Presenttill',
         alternates: {
-            canonical: `/produkt/${slug}`,
+            canonical: `/butiker/${slug}`,
             languages: {
                 'en-US': '/en-US',
             },
@@ -25,11 +25,11 @@ export async function generateMetadata({ params: { slug } }: Props): Promise<any
 }
 
 export default function Product({ params: { slug } }: Props){
-
+    // py-[40px] md:py-[60px] lg:py-[100px] px-5 md:px-[40px] lg:px-[60px] xl:px-[150px]
 
     return(
-        <main className=" py-[40px] md:py-[60px] lg:py-[100px] px-5 md:px-[40px] lg:px-[60px] xl:px-[150px] ">
-            <SingleProduct slug={slug} />
+        <main className=" ">
+            <ButikerSection slug={slug} />
         </main>
     )
 }

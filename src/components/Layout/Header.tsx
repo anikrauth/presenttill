@@ -28,7 +28,7 @@ export default function Header() {
 
                 <ul className="social_handels flex items-center pl-[40px]">
                     <li>
-                        <Link href="/">
+                        <Link href="https://www.facebook.com/presenttill">
                             <BiLogoFacebookCircle className="w-6 h-6 text-secondary_color hover:text-white_color" />
                         </Link>
                     </li>

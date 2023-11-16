@@ -54,6 +54,7 @@ export default function SidebarOverlay(props: { setOpenSidebar: any, openSidebar
                             {...framerSidebarBackground}
                             aria-hidden="true"
                             className="fixed bottom-0 left-0 right-0 top-0 z-40 bg-[rgba(0,0,0,0.1)] backdrop-blur-sm"
+                            onClick={() => setOpenSidebar(false)}
                         ></motion.div>
                         <motion.div
                             {...framerSidebarPanel}

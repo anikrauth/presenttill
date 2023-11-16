@@ -11,7 +11,7 @@ export default function Footer() {
                     <span><FiMail className="w-5 h-5 text-secondary_color" /></span>
                     <span className="pl-2">hej@presenttill.nu</span>
                 </Link>
-                <Link className="flex items-center text-[17px] font-normal " href="/">
+                <Link className="flex items-center text-[17px] font-normal " href="https://www.facebook.com/presenttill">
                     <span><FiFacebook  className="w-5 h-5 text-secondary_color" /></span>
                     <span className="pl-2">Facebook</span>
                 </Link>
@@ -28,7 +28,7 @@ export default function Footer() {
             </div>
             <div className="footer_item	">
                 <h3 className="text-[18px]  uppercase font-medium pb-3">FÖLJ OSS</h3>
-                <Link className="flex items-center text-[17px] font-normal " href="/">
+                <Link className="flex items-center text-[17px] font-normal " href="https://www.facebook.com/presenttill">
                     <span><FaFacebook  className="w-5 h-5 text-secondary_color" /></span>
                     <span className="pl-2">Facebook</span>
                 </Link>

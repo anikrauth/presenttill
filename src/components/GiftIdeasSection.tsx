@@ -45,7 +45,7 @@ export default function GiftIdeasSection() {
                         {
                             homePage?.typesOfGifts?.map((item: any) => {
                                 return(
-                                    <Link href="/" key={item?.id} className="overflow-hidden item bg-2nd_section_color hover:bg-primary_color hover:border-2nd_section_color border-2 transition-all block border-2nd_section_color p-2 md:p-5 text-white_color">
+                                    <Link href={`/${item?.slug}`} key={item?.id} className="overflow-hidden item bg-2nd_section_color hover:bg-primary_color hover:border-2nd_section_color border-2 transition-all block border-2nd_section_color p-2 md:p-5 text-white_color">
                                         {
                                             item?.featuredImage ? (
                                                 <Image className="h-[100px] md:h-[200px] object-cover" src={item?.featuredImage?.node?.sourceUrl} width="300" height="300" alt="card Image" />
@@ -106,7 +106,7 @@ export default function GiftIdeasSection() {
                         {
                             homePage?.occasionsAndHolidays?.map((item: any) => {
                                 return(
-                                    <Link href="/" key={item?.id} className="overflow-hidden item bg-primary_color hover:bg-2nd_section_color hover:border-primary_color border-2 transition-all block border-primary_color p-2 md:p-5 text-white_color">
+                                    <Link href={`/${item?.slug}`} key={item?.id} className="overflow-hidden item bg-primary_color hover:bg-2nd_section_color hover:border-primary_color border-2 transition-all block border-primary_color p-2 md:p-5 text-white_color">
                                         {
                                             item?.featuredImage ? (
                                                 <Image className=" h-[100px] md:h-[200px] object-cover" src={item?.featuredImage?.node?.sourceUrl} width="300" height="300" alt="card Image" />
