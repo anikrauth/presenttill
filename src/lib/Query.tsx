@@ -190,6 +190,9 @@ query Get_Product( $id: ID!) {
     id
     title
     content
+    productFiled {
+      affiliateLink
+    }
     categories{
       nodes{
         id

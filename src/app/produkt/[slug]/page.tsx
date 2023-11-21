@@ -10,7 +10,7 @@ interface Props {
 export async function generateMetadata({ params: { slug } }: Props): Promise<any> {
 
     return {
-        title: `${slug} - Presenttill`,
+        title: `${slug.replace(/-/g, " ")} - Presenttill`,
         description: 'Presenttill',
         alternates: {
             canonical: `/produkt/${slug}`,
