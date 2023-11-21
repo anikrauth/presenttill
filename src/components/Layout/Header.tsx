@@ -19,9 +19,12 @@ export default function Header() {
             <SidebarOverlay openSidebar={openSidebar} setOpenSidebar={setOpenSidebar} />
             <Logo />
             <div className="flex items-center">
-                <button onClick={() => setOpenSearchbar(!openSearchbar)} className="search_wraper flex items-center">
+                <Link className=" md:block hidden text-[16px] hover:font-medium hover:text-secondary_color text-white_color font-normal pr-[40px]" href="/blogs">
+                    Bloggar
+                </Link>
+                <button onClick={() => setOpenSearchbar(!openSearchbar)} className="search_wraper flex items-center hover:font-medium hover:text-secondary_color text-white_color ">
                     <BiSearch className="w-6 h-6 text-secondary_color" />
-                    <span className="md:block hidden text-white_color text-[16px] pl-[5px]">Search</span>
+                    <span className="md:block hidden text-[16px] pl-[5px]">Sök</span>
                 </button>
 
                {openSearchbar && <SearchModal openSearchbar={openSearchbar} setOpenSearchbar={setOpenSearchbar} />} 

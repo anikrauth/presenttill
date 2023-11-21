@@ -9,10 +9,7 @@ export const metadata: Metadata = {
     title: 'All products - Present till',
     description: 'All products - Present till',
     alternates: {
-        canonical: `/produkt`,
-        languages: {
-            'en-US': '/en-US',
-        },
+        canonical: `https://presenttill.nu/produkt`,
     },
     openGraph: {
         images: '',

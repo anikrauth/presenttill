@@ -47,6 +47,14 @@ query Get_All_Pages {
   homePage(id: "home", idType: SLUG) {
     id
     name
+    seo {
+      metaDesc
+      metaKeywords
+      title
+      opengraphImage {
+        sourceUrl
+      }
+    }
     homePage {
       typesOfGifts {
         ... on Page {
@@ -114,6 +122,12 @@ query Get_Page($id: ID!) {
     title
     content
     excerpt
+    seo {
+      metaDesc
+      metaKeywords
+      title
+      fullHead
+    }
     pagesProducts {
       products {
         ... on Produkt {
@@ -210,6 +224,12 @@ query Get_Product( $id: ID!) {
         sourceUrl
       }
     }
+    seo {
+      metaDesc
+      metaKeywords
+      title
+      fullHead
+    }
   }
 }
 `;
@@ -221,6 +241,12 @@ const GET_BUTIK = gql`
     title
     slug
     content
+    seo {
+      metaDesc
+      metaKeywords
+      title
+      fullHead
+    }
     featuredImage{
       node{
         sourceUrl
@@ -229,5 +255,70 @@ const GET_BUTIK = gql`
   }
 }
 `;
+const GET_VALGORENHET = gql`
+query Get_Valgorenhe($id: ID!) {
+  vLgRenhet(id: $id, idType: SLUG) {
+    title
+    content
+    featuredImage {
+      node {
+        sourceUrl
+      }
+    }
+    seo {
+      metaDesc
+      metaKeywords
+      title
+      fullHead
+    }
+  }
+}
+`;
 
-export {GET_SIDEBAR_MENU,GET_PRODUCT, GET_ALL_PAGES, GET_HOME_DATA, GET_HOME_PRODUCTS, GET_PAGE, GET_SEARCH_RESULT, GET_ALL_PRODUCTS, GET_BUTIK};
+const GET_POSTS = gql`
+query Get_Blogs{
+  posts {
+    nodes {
+      id
+      title
+      slug
+      categories{
+        nodes{
+          id
+          name
+        }
+      }
+      featuredImage{
+        node{
+          sourceUrl
+        }
+      }
+    }
+  }
+}
+`;
+
+const GET_POST = gql`
+query Get_Blog($id: ID!) {
+  post(id: $id, idType: SLUG) {
+    id
+    title
+    content
+    featuredImage {
+      node {
+        sourceUrl
+      }
+    }
+    seo {
+      metaDesc
+      metaKeywords
+      title
+      opengraphImage {
+        sourceUrl
+      }
+    }
+  }
+}
+`;
+
+export {GET_SIDEBAR_MENU,GET_PRODUCT, GET_ALL_PAGES, GET_HOME_DATA, GET_HOME_PRODUCTS, GET_PAGE, GET_SEARCH_RESULT, GET_ALL_PRODUCTS, GET_BUTIK, GET_VALGORENHET,GET_POSTS, GET_POST};

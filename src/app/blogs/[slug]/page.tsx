@@ -1,6 +1,7 @@
-import PageContent from "@/components/PageContent";
+import SingleBlogContent from "@/components/BlogsComponents/SingleBlogContent";
 import client from "@/lib/ApolloClient";
-import {GET_PAGE} from "@/lib/Query";
+import {GET_POST} from "@/lib/Query";
+
 
 interface Props {
     params: {
@@ -10,25 +11,25 @@ interface Props {
 
 export async function generateMetadata({ params: { slug } }: Props): Promise<any> {
     const data: any = await client.request(
-        GET_PAGE,
+        GET_POST,
         // variables are type-checked too!
         {id: slug}
     )
     return {
-        title: `${data?.page?.title} - Presenttill`,
-        description: data?.page?.seo?.metaDesc,
+        title: `${data?.post?.title} - Presenttill`,
+        description: data?.post?.seo?.metaDesc,
         alternates: {
-            canonical: `https://presenttill.nu/${slug}`,
+            canonical: `https://presenttill.nu/blogs/${slug}`,
             languages: {
                 'sv_SE': '/sv_SE',
             },
         },
         openGraph: {
-            title: `${data?.page?.title} - Presenttill`,
-            description: data?.page?.seo?.metaDesc,
+            title: `${data?.post?.title} - Presenttill`,
+            description: data?.post?.seo?.metaDesc,
             images: [
                 {
-                    url: data?.page?.featuredImage?.node?.sourceUrl,
+                    url: data?.post?.featuredImage?.node?.sourceUrl,
                     width: 800,
                     height: 800
                 }
@@ -36,15 +37,11 @@ export async function generateMetadata({ params: { slug } }: Props): Promise<any
         },
     }
 }
-
-
-export default function Pages ({ params: { slug } }: Props) {
-
-
+export default function SingleBlog({ params: { slug } }: Props){
 
     return(
-        <main className="">
-            <PageContent slug={slug} />
+        <main >
+            <SingleBlogContent  slug={slug}/>
         </main>
     )
 }

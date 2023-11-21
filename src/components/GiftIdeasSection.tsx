@@ -33,11 +33,11 @@ export default function GiftIdeasSection() {
 
                     <div className="sec_header flex justify-between items-center text-white_color">
                         <div>
-                            <h2 className="text-[22px] md:text-[32px] font-bold">Different types of <span className="text-secondary_color">gifts</span></h2>
-                            <p className=" text-[14px] md:text-[16px] font-normal pt-[10px]">Use the pages below when you know what type of gift you are looking for</p>
+                            <h2 className="text-[22px] md:text-[32px] font-bold">Olika typer av <span className="text-secondary_color">presenter</span></h2>
+                            <p className=" text-[14px] md:text-[16px] font-normal pt-[10px]">Använd sidorna nedan när du vet vilken typ av present som du letar efter</p>
                         </div>
-                        <Link className="md:block hidden text-[18px] font-semibold text-secondary_color" href="/">
-                            View All
+                        <Link className="md:block hidden text-[18px] font-semibold text-secondary_color" href="/produkt">
+                            Visa alla
                         </Link>
                     </div>
 
@@ -76,9 +76,9 @@ export default function GiftIdeasSection() {
                 <div className="bg-[#EFB7B1] mx-5 md:mx-[60px] lg:mx-[100px] py-[40px] rounded px-5 md:px-[40px] md:flex justify-between items-center">
                     <div className="info text-white_color w-full md:w-[60%]">
                         <h4 className="text-secondary_color  bg-primary_color p-[5px] w-[140px] md:flex justify-center items-center text-[16px] font-normal rounded ">Presenttill.nu</h4>
-                        <h2 className="py-[20px] text-[24px] md:text-[32px] font-bold ">It pays to visit <span className="text-secondary_color">Presenttill.nu</span> often</h2>
-                        <p className="text-[16px] font-[400] text-primary_color pb-[10px]">The page is updated every day with new gift ideas and <span> <Link className="font-[600] hover:underline" href="/julklappar/">Christmas gift tips</Link> </span> before Christmas.</p>
-                        <p className="text-[16px] font-[400] text-primary_color">Before Christmas Eve 2021, you will be able to see over 300 Christmas gift tips here <span> <Link className="font-[600]  hover:underline" href="/">presenttill.nu</Link> </span> which will become the leading gift site on the net.</p>
+                        <h2 className="py-[20px] text-[24px] md:text-[32px] font-bold ">Det lönar sig att besöka <span className="text-secondary_color">Presenttill.nu</span> ofta</h2>
+                        <p className="text-[16px] font-[400] text-primary_color pb-[10px]">Sidan uppdateras varje dag med nya presenttips och   <span> <Link className="font-[600] hover:underline" href="/julklappar/">julklappstips</Link> </span> inför julen.</p>
+                        <p className="text-[16px] font-[400] text-primary_color">Innan julafton 2021 kommer ni kunna se över 300 julklappstips här hos <span> <Link className="font-[600]  hover:underline" href="/">presenttill.nu</Link> </span> som ska bli den ledande presentsidan på nätet.</p>
                     </div>
                     <div >
                         <Image src="/giftbox.svg" width="300" height="200" alt="gift box" />
@@ -93,12 +93,12 @@ export default function GiftIdeasSection() {
 
                     <div className="sec_header flex justify-between items-center text-white_color">
                         <div>
-                            <h2 className="text-[22px] md:text-[32px] font-bold">Gift ideas for various <span className="text-secondary_color">occasions and holidays</span></h2>
-                            <p className="text-[14px] md:text-[16px] font-normal pt-[10px]"> Here we collect various special occasions and holidays and give you suitable gift tips based on events</p>
+                            <h2 className="text-[22px] md:text-[32px] font-bold">Presenttips till olika <span className="text-secondary_color">tillfällen och högtider</span></h2>
+                            <p className="text-[14px] md:text-[16px] font-normal pt-[10px]"> Här samlar vi olika speciella tillfällen och högtider och ger er lämpliga presenttips utifrån händelser</p>
 
                         </div>
-                        <Link className="md:block hidden text-[18px] font-semibold text-secondary_color" href="/">
-                            View All
+                        <Link className="md:block hidden text-[18px] font-semibold text-secondary_color" href="/produkt">
+                            Visa alla
                         </Link>
                     </div>
 

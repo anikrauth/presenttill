@@ -1,4 +1,6 @@
 import SingleProduct from "@/components/SingleProduct";
+import client from "@/lib/ApolloClient";
+import {GET_PRODUCT} from "@/lib/Query";
 
 interface Props {
     params: {
@@ -8,18 +10,30 @@ interface Props {
 
 
 export async function generateMetadata({ params: { slug } }: Props): Promise<any> {
-
+    const data: any = await client.request(
+        GET_PRODUCT,
+        // variables are type-checked too!
+        {id: slug}
+    )
     return {
-        title: `${slug.replace(/-/g, " ")} - Presenttill`,
-        description: 'Presenttill',
+        title: `${data?.produkt?.title} - Presenttill`,
+        description: data?.produkt?.seo?.metaDesc,
         alternates: {
-            canonical: `/produkt/${slug}`,
+            canonical: `https://presenttill.nu/produkt/${slug}`,
             languages: {
-                'en-US': '/en-US',
+                'sv_SE': '/sv_SE',
             },
         },
         openGraph: {
-            images: '',
+            title: `${data?.produkt?.title} - Presenttill`,
+            description: data?.produkt?.seo?.metaDesc,
+            images: [
+                {
+                    url: data?.produkt?.featuredImage?.node?.sourceUrl,
+                    width: 800,
+                    height: 800
+                }
+            ],
         },
     }
 }

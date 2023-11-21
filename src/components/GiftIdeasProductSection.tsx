@@ -22,10 +22,10 @@ export default function GiftIdeasProductSection(){
         <div className=" py-[40px] md:py-[60px] lg:py-[100px] px-5 md:px-[40px] lg:px-[60px] xl:px-[100px]">
             <div className="sec_header flex justify-between items-center text-white_color">
                 <div>
-                    <h2 className="text-[22px] md:text-[32px] font-bold text-primary_color">Popular <span className="text-heading_2nd_color">gift ideas</span></h2>
+                    <h2 className="text-[22px] md:text-[32px] font-bold text-primary_color">Populära <span className="text-heading_2nd_color">presenttips</span></h2>
                 </div>
-                <Link className="md:block hidden text-[18px] font-semibold text-heading_2nd_color" href="/">
-                    View All
+                <Link className="md:block hidden text-[18px] font-semibold text-heading_2nd_color" href="/produkt">
+                    Visa alla
                 </Link>
             </div>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[10px] md:gap-5 pt-[40px]">
@@ -36,7 +36,7 @@ export default function GiftIdeasProductSection(){
                                 <Link href={`/produkt/${item?.slug}`} className=" overflow-hidden relative w-full block">
                                     {
                                         item?.featuredImage ? (
-                                           <div className=" h-[160px] md:h-[280px] flex justify-center items-center">
+                                           <div className="h-[160px] md:h-[280px] flex justify-center items-center">
                                                <Image src={item?.featuredImage?.node?.sourceUrl} className="product_image transition-all rounded-t-[12px] object-contain" alt={item?.title} width="600" height="400" />
                                            </div>
                                         ): (

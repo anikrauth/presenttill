@@ -91,11 +91,11 @@ export  default function HomeTextSection(){
                     openText ? (
                         <>
 
-                            <span>Hide Text</span> <span className="pl-1"><IoChevronDownOutline className="w-5 h-5" /></span>
+                            <span>Dölj text</span> <span className="pl-1"><IoChevronDownOutline className="w-5 h-5" /></span>
                         </>
                     ): (
                         <>
-                            <span>See More</span> <span className="pl-1"><IoChevronDownOutline className="w-5 h-5" /></span>
+                            <span>se mer</span> <span className="pl-1"><IoChevronDownOutline className="w-5 h-5" /></span>
                         </>
                     )
                 }

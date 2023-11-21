@@ -3,7 +3,7 @@ import { FiMail, FiFacebook  } from "react-icons/fi";
 import { FaFacebook } from "react-icons/fa";
 export default function Footer() {
     return(
-        <footer className="py-[40px] md:py-[60px] lg:py-[100px] px-5 md:px-[40px] lg:px-[60px] xl:px-[100px] bg-primary_color grid grid-cols-1 md:grid-cols-3 gap-10  text-white_color justify-center ">
+        <footer className="py-[40px] md:py-[60px] lg:py-[100px] px-5 md:px-[40px] lg:px-[60px] xl:px-[100px] bg-primary_color grid grid-cols-1 md:grid-cols-4 gap-10  text-white_color justify-center ">
             <div className="footer_item  ">
                 <h3 className="text-[18px]  uppercase font-medium pb-3">KONTAKTA OSS</h3>
                 <p>Vill du ge presenttips, ris eller ros, eller annonsera så går det bra att kontakta ossE-post:</p>
@@ -17,6 +17,7 @@ export default function Footer() {
                 </Link>
 
             </div>
+
             <div className="footer_item ">
                 <h3 className="text-[18px]  uppercase font-medium pb-3">COPYRIGHT</h3>
                 <p className="pb-3">Copyright © 2020 Presenttill.nu
@@ -27,7 +28,10 @@ export default function Footer() {
 
             </div>
             <div className="footer_item	">
-                <h3 className="text-[18px]  uppercase font-medium pb-3">FÖLJ OSS</h3>
+                <Link className="flex items-center text-[17px] font-normal pt-5 pb-3" href="/blogs">
+                    Blogs
+                </Link>
+                <h3 className="text-[18px]  uppercase font-medium py-3">FÖLJ OSS</h3>
                 <Link className="flex items-center text-[17px] font-normal " href="https://www.facebook.com/presenttill">
                     <span><FaFacebook  className="w-5 h-5 text-secondary_color" /></span>
                     <span className="pl-2">Facebook</span>
