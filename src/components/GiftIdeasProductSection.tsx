@@ -22,9 +22,9 @@ export default function GiftIdeasProductSection(){
         <div className=" py-[40px] md:py-[60px] lg:py-[100px] px-5 md:px-[40px] lg:px-[60px] xl:px-[100px]">
             <div className="sec_header flex justify-between items-center text-white_color">
                 <div>
-                    <h2 className="text-[22px] md:text-[32px] font-bold text-primary_color">Popular <span className="text-secondary_color">gift ideas</span></h2>
+                    <h2 className="text-[22px] md:text-[32px] font-bold text-primary_color">Popular <span className="text-heading_2nd_color">gift ideas</span></h2>
                 </div>
-                <Link className="md:block hidden text-[18px] font-semibold text-secondary_color" href="/">
+                <Link className="md:block hidden text-[18px] font-semibold text-heading_2nd_color" href="/">
                     View All
                 </Link>
             </div>

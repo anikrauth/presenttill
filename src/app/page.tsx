@@ -31,7 +31,7 @@ export default function Home() {
             </div>
             <div className="w-full md:w-[60%] pt-[30px]">
                 <h3 className="text-[24px] md:text-[32px] font-bold text-primary_color">Our Mission</h3>
-                <h4 className="text-[18px] md:text-[24px] font-semibold text-primary_color pt-[15px]">Our goal to be able to present around <span className="text-secondary_color">1000 gift tips!</span></h4>
+                <h4 className="text-[18px] md:text-[24px] font-semibold text-primary_color pt-[15px]">Our goal to be able to present around <span className="text-heading_2nd_color">1000 gift tips!</span></h4>
                 <p className="text-[16px] font-normal pt-[10px]">New stores and collaborations are coming in continuously. The focus is on gifts for special occasions, but among our gift tips you should also be able to find different and odd gift suggestions. We are not afraid to take turns when it comes to gifts of all kinds.</p>
             </div>
         </div>
