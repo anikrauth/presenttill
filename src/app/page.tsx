@@ -17,7 +17,7 @@ export async function generateMetadata({ params: { slug } }: Props): Promise<any
         GET_HOME_DATA,
     )
     return {
-        title: `${data?.homePage?.seo?.title} - Presenttill`,
+        title: `Home - Presenttill`,
         description: data?.homePage?.seo?.metaDesc,
         alternates: {
             canonical: `https://presenttill.nu`,
