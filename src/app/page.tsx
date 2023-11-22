@@ -42,6 +42,7 @@ export default function Home() {
   return (
     <main>
       <HeroSection />
+        <UpCommingSection />
       <GiftIdeasSection />
         <div className=" py-[40px] md:py-[60px] lg:py-[100px] px-5 md:px-[40px] lg:px-[60px] xl:px-[100px] md:flex justify-center items-center">
             <div className=" w-full md:w-[40%] flex justify-center md:justify-end pr-0 md:pr-20">

@@ -321,4 +321,23 @@ query Get_Blog($id: ID!) {
 }
 `;
 
-export {GET_SIDEBAR_MENU,GET_PRODUCT, GET_ALL_PAGES, GET_HOME_DATA, GET_HOME_PRODUCTS, GET_PAGE, GET_SEARCH_RESULT, GET_ALL_PRODUCTS, GET_BUTIK, GET_VALGORENHET,GET_POSTS, GET_POST};
+
+const GET_SPECIAL_DAYS = gql`
+    query Get_Secial_Days {
+  specialDays {
+    nodes {
+      id
+      title
+      specialDyas {
+        showHomePage
+        pickSpecialDayDate
+        url
+        linkLabel
+      }
+    }
+  }
+}
+`;
+
+
+export {GET_SIDEBAR_MENU,GET_PRODUCT, GET_ALL_PAGES, GET_HOME_DATA, GET_HOME_PRODUCTS, GET_PAGE, GET_SEARCH_RESULT, GET_ALL_PRODUCTS, GET_BUTIK, GET_VALGORENHET,GET_POSTS, GET_POST, GET_SPECIAL_DAYS};
