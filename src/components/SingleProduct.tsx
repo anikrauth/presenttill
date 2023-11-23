@@ -54,7 +54,7 @@ export default function SingleProduct(props: any){
                     }
                 </ul>
 
-                <Link className="w-full h-[55px] bg-primary_color text-secondary_color flex justify-center items-center text-[18px] font-medium uppercase" href={data?.produkt?.productFiled?.affiliateLink ? `${data?.produkt?.productFiled?.affiliateLink} ` : ''}>
+                <Link rel="nofollow, sponsored" target='_blank' className="w-full h-[55px] bg-primary_color text-secondary_color flex justify-center items-center text-[18px] font-medium uppercase" href={data?.produkt?.productFiled?.affiliateLink ? `${data?.produkt?.productFiled?.affiliateLink} ` : ''}>
                     <span className="pr-2">Buy Now</span> <span><FiArrowUpRight className="w-6 h-6" /></span>
                 </Link>
 
