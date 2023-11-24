@@ -14,14 +14,9 @@ export async function generateMetadata(params: any): Promise<any> {
         title: `Searching for ${params?.searchParams?.q} - Presenttill`,
         description: 'Presenttill',
         alternates: {
-            canonical: `/search?q=${params?.searchParams?.q}`,
-            languages: {
-                'en-US': '/en-US',
-            },
+            canonical: `https://presenttill.nu/search?q=${params?.searchParams?.q}`,
         },
-        openGraph: {
-            images: '',
-        },
+
     }
 }
 export default function SearchPage(params: any){

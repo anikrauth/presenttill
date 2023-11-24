@@ -20,9 +20,6 @@ export async function generateMetadata({ params: { slug } }: Props): Promise<any
         description: data?.post?.seo?.metaDesc,
         alternates: {
             canonical: `https://presenttill.nu/blogs/${slug}`,
-            languages: {
-                'sv_SE': '/sv_SE',
-            },
         },
         openGraph: {
             title: `${data?.post?.title} - Presenttill`,

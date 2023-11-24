@@ -20,9 +20,6 @@ export async function generateMetadata({ params: { slug } }: Props): Promise<any
         description: data?.butik?.seo?.metaDesc,
         alternates: {
             canonical: `https://presenttill.nu/butiker/${slug}`,
-            languages: {
-                'sv_SE': '/sv_SE',
-            },
         },
         openGraph: {
             title: `${data?.butik?.title} - Presenttill`,

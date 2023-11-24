@@ -19,9 +19,6 @@ export async function generateMetadata({ params: { slug } }: Props): Promise<any
         description: data?.vLgRenhet?.seo?.metaDesc,
         alternates: {
             canonical: `https://presenttill.nu/valgorenhet/${slug}`,
-            languages: {
-                'sv_SE': '/sv_SE',
-            },
         },
         openGraph: {
             title: `${data?.vLgRenhet?.title} - Presenttill`,

@@ -8,9 +8,7 @@ export const metadata: Metadata = {
     alternates: {
         canonical: `https://presenttill.nu/blogs`,
     },
-    openGraph: {
-        images: '',
-    },
+
 }
 
 

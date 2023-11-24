@@ -11,9 +11,6 @@ export const metadata: Metadata = {
     alternates: {
         canonical: `https://presenttill.nu/produkt`,
     },
-    openGraph: {
-        images: '',
-    },
 }
 
 

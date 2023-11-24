@@ -21,12 +21,9 @@ export async function generateMetadata({ params: { slug } }: Props): Promise<any
         description: data?.homePage?.seo?.metaDesc,
         alternates: {
             canonical: `https://presenttill.nu`,
-            languages: {
-                'sv_SE': '/sv_SE',
-            },
         },
         openGraph: {
-            title: `${data?.butik?.title} - Presenttill`,
+            title: `${data?.homePage?.title} - Presenttill`,
             description: data?.homePage?.seo?.metaDesc,
             images: [
                 {
