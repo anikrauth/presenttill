@@ -1,15 +1,14 @@
-import Image from "next/image";
 import { HiMiniBars3BottomLeft } from "react-icons/hi2";
 import { BiLogoFacebookCircle, BiSearch } from "react-icons/bi";
 import Link from "next/link";
 import SidebarOverlay from "./SidebarOverlay";
 import Logo from "../Logo";
-import { useState } from "react";
+import { useState,useContext } from "react";
 import SearchModal from "./SearchModal";
-
+import { AppContext } from '@/utils/AppContext'
 export default function Header() {
+    const {openSearchbar, setOpenSearchbar} = useContext(AppContext)
     const [openSidebar, setOpenSidebar] = useState(false)
-    const [openSearchbar, setOpenSearchbar] = useState(false)
     return (
         <header className="px-[40px] md:px-[100px] h-[85px] shadow-sm flex items-center justify-between bg-primary_color">
             <button onClick={() => setOpenSidebar(!openSidebar)} className="flex items-center">
