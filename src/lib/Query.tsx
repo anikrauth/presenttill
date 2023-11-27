@@ -25,22 +25,6 @@ query Get_Header_menu {
 `;
 
 
-const GET_ALL_PAGES = gql`
- query Get_All_Pages {
-  pages {
-    nodes {
-      id
-      title
-      slug
-      featuredImage{
-        node{
-          sourceUrl
-        }
-      }
-    }
-  }
-}
-`;
 
 const GET_HOME_DATA = gql`
 query Get_All_Pages {
@@ -97,6 +81,9 @@ const GET_HOME_PRODUCTS = gql`
           title
           slug
           content
+          productFiled {
+            storeLink
+          }
           categories{
             nodes{
               id
@@ -122,6 +109,11 @@ query Get_Page($id: ID!) {
     title
     content
     excerpt
+    featuredImage{
+       node{
+        sourceUrl
+      }
+    }
     seo {
       metaDesc
       metaKeywords
@@ -134,6 +126,9 @@ query Get_Page($id: ID!) {
           id
           title
           slug
+          productFiled {
+            storeLink
+          }
           categories{
             nodes{
               id
@@ -176,6 +171,9 @@ query Get_All_Products($after: String, $first: Int) {
       id
       title
       slug
+      productFiled {
+        storeLink
+      }
       categories {
         nodes {
           id
@@ -206,6 +204,7 @@ query Get_Product( $id: ID!) {
     content
     productFiled {
       affiliateLink
+      storeLink
     }
     categories{
       nodes{
@@ -340,4 +339,4 @@ const GET_SPECIAL_DAYS = gql`
 `;
 
 
-export {GET_SIDEBAR_MENU,GET_PRODUCT, GET_ALL_PAGES, GET_HOME_DATA, GET_HOME_PRODUCTS, GET_PAGE, GET_SEARCH_RESULT, GET_ALL_PRODUCTS, GET_BUTIK, GET_VALGORENHET,GET_POSTS, GET_POST, GET_SPECIAL_DAYS};
+export {GET_SIDEBAR_MENU,GET_PRODUCT, GET_HOME_DATA, GET_HOME_PRODUCTS, GET_PAGE, GET_SEARCH_RESULT, GET_ALL_PRODUCTS, GET_BUTIK, GET_VALGORENHET,GET_POSTS, GET_POST, GET_SPECIAL_DAYS};

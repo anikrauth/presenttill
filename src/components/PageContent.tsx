@@ -22,8 +22,8 @@ export default function PageContent(props: any) {
 
     return(
         <>
-            <div className="py-[40px] md:py-[60px] lg:py-[100px] px-5 md:px-[40px] lg:px-[60px] xl:px-[100px] h-[250px] flex justify-center items-center bg-primary_color text-secondary_color">
-                <h1 className="text-[32px] md:text-[42px] lg:text-[52px] font-bold capitalize">{data?.page?.title} {new Date().getFullYear()}</h1>
+            <div style={{backgroundImage:`url(${data?.page?.featuredImage?.node?.sourceUrl})`, backgroundSize:`cover`, backgroundPosition:`center`}} className=" relative breadcumb_page py-[40px] md:py-[60px] lg:py-[140px] px-5 md:px-[40px] lg:px-[60px] xl:px-[100px] h-[250px] flex justify-center items-center bg-primary_color text-white_color">
+                <h1 className=" shadow-sm relative z-10 text-[32px] md:text-[42px] lg:text-[52px] font-bold capitalize">{data?.page?.title} {new Date().getFullYear()}</h1>
             </div>
             <div className="py-[40px] lg:py-[60px] px-5 md:px-[40px] lg:px-[60px] xl:px-[100px]">
                 <div className="content" dangerouslySetInnerHTML={{__html: `${data?.page?.content}`}} />
@@ -77,11 +77,11 @@ export default function PageContent(props: any) {
 
                                         <div className="bottom_wraper  border-t-2 pt-2 md:pt-3 mt-2 md:mt-3">
                                             <Link href={`/produkt/${item?.slug}`}  type="button" className="  justify-between flex items-center text-[10px] md:text-[13px] font-bold uppercase py-[0px] pl-2 md:pl-[10px] rounded-full border-0 md:border-2 border-buy_button_border bg-primary_color text-secondary_color">
-                                                <span className="">See current price</span> <span className="w-[32px] h-[32px] flex items-center justify-center rounded-full bg-buy_icon_bg border-secondary_color border-2 ml-[5px]"><FiArrowRight className="w-4 h-4 md:w-5 md:h-5" /></span>
+                                                <span className="">SE AKTUELLT PRIS</span> <span className="w-[32px] h-[32px] flex items-center justify-center rounded-full bg-buy_icon_bg border-secondary_color border-2 ml-[5px]"><FiArrowRight className="w-4 h-4 md:w-5 md:h-5" /></span>
                                             </Link>
 
-                                            <Link href="/"  type="button" className=" justify-between mt-2 flex items-center text-[10px] md:text-[13px] font-bold uppercase py-[0px] pl-2 md:pl-[10px] rounded-full border-2 border-buy_button_border ">
-                                                <span className="">See more about the store</span> <span className="w-[32px] h-[32px] flex items-center justify-center rounded-full bg-buy_icon_bg border-secondary_color border-2 ml-[5px]"><FiArrowRight className="w-4 h-4 md:w-5 md:h-5" /></span>
+                                            <Link href={item?.productFiled?.storeLink ? item?.productFiled?.storeLink : '/'}  type="button" className=" justify-between mt-2 flex items-center text-[10px] md:text-[13px] font-bold uppercase py-[0px] pl-2 md:pl-[10px] rounded-full border-2 border-buy_button_border ">
+                                                <span className="">SE MER OM BUTIKEN</span> <span className="w-[32px] h-[32px] flex items-center justify-center rounded-full bg-buy_icon_bg border-secondary_color border-2 ml-[5px]"><FiArrowRight className="w-4 h-4 md:w-5 md:h-5" /></span>
                                             </Link>
 
                                         </div>

@@ -55,11 +55,11 @@ export default function SingleProduct(props: any){
                 </ul>
 
                 <Link rel="nofollow, sponsored" target='_blank' className="w-full h-[55px] bg-primary_color text-secondary_color flex justify-center items-center text-[18px] font-medium uppercase" href={data?.produkt?.productFiled?.affiliateLink ? `${data?.produkt?.productFiled?.affiliateLink} ` : ''}>
-                    <span className="pr-2">Buy Now</span> <span><FiArrowUpRight className="w-6 h-6" /></span>
+                    <span className="pr-2">köp nu</span> <span><FiArrowUpRight className="w-6 h-6" /></span>
                 </Link>
 
                 <ul className="flex items-center pt-[40px]">
-                    <li className="flex items-center text-[17px] font-medium text-gray-600"><span className="pr-2"><IoShareSocialSharp className="w-6 h-6" /></span> <span>Share</span> </li>
+                    <li className="flex items-center text-[17px] font-medium text-gray-600"><span className="pr-2"><IoShareSocialSharp className="w-6 h-6" /></span> <span>Dela med sig</span> </li>
                     <li className="pl-3">
                         <FacebookShareButton
                             url={`/produkt/${slug}`}

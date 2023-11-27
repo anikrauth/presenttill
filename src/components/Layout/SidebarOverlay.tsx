@@ -60,7 +60,7 @@ export default function SidebarOverlay(props: { setOpenSidebar: any, openSidebar
                             {...framerSidebarPanel}
                             className={`sidebar_wraper h-full transition-all z-[100] w-[300px] bg-primary_color fixed  top-0 left-0`}>
                             <div className="sidebar_header px-5 h-[75px]  flex justify-between items-center">
-                                <p className="text-white_color text-[16px] font-normal">All gift ideas.</p>
+                                <p className="text-white_color text-[16px] font-normal">Alla presentidéer.</p>
                                 <button onClick={() => setOpenSidebar(false)}>
                                     <HiXMark className="w-7 h-7 text-secondary_color" />
                                 </button>
