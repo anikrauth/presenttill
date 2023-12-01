@@ -5,6 +5,13 @@ import client from "@/lib/ApolloClient";
 import Link from "next/link";
 import Image from "next/image";
 import {FiArrowRight} from "react-icons/fi";
+
+import '@wordpress/block-library/build-style/common.css'
+import '@wordpress/block-library/build-style/elements.css'
+import '@wordpress/block-library/build-style/columns/style.css'
+import '@wordpress/block-library/build-style/theme.css'
+import '@wordpress/block-library/build-style/style.css'
+
 export default function PageContent(props: any) {
     const {slug} = props;
 
