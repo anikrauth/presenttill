@@ -1,5 +1,5 @@
 import { gql } from "graphql-request";
-
+import {BLOCKS_FIELD } from '@/components/Block';
 const GET_SIDEBAR_MENU = gql`
 query Get_Header_menu {
     menu(id: "Gift tips", idType: NAME) {
@@ -318,8 +318,9 @@ query Get_Blog($id: ID!) {
     }
   }
 }
-`;
 
+`;
+// ${BLOCKS_FIELD}     ...BlocksField
 
 const GET_SPECIAL_DAYS = gql`
     query Get_Secial_Days {
