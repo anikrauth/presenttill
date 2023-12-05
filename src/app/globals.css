@@ -77,6 +77,36 @@ body{
   font-weight: 600 !important;
   padding-bottom: 30px;
 }
+.content a {
+  color: #00cf8b;
+}
+.content p a {
+  color: #00cf8b;
+}
+.content .wp-block-columns{
+  padding-top: 40px;
+}
+.content .wp-block-columns .wp-block-column h1{
+  font-size: 28px;
+  font-weight: 600 !important;
+  padding-bottom: 30px;
+}
+.content .wp-block-columns .wp-block-column h2{
+  font-size: 26px;
+  font-weight: 600 !important;
+  padding-bottom: 30px;
+}
+.content .wp-block-columns .wp-block-column h3{
+  font-size: 24px;
+  font-weight: 600 !important;
+  padding: 30px 0px;
+}
+.content .wp-block-columns .wp-block-column h4{
+  font-size: 24px;
+  font-weight: 600 !important;
+  padding: 30px 0px;
+}
+
 .content > h2{
   font-size: 26px;
   font-weight: 600 !important;

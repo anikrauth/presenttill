@@ -3,10 +3,10 @@ import BlogsGrid from "@/components/BlogsComponents/BlogsGrid";
 
 
 export const metadata: Metadata = {
-    title: 'Blogs - Present till',
-    description: 'All Blogs - Present till',
+    title: 'Presenttips - Present till',
+    description: 'All Presenttips - Present till',
     alternates: {
-        canonical: `https://presenttill.nu/blogs`,
+        canonical: `https://presenttill.nu/presenttips`,
     },
 
 }

@@ -34,7 +34,9 @@ export default function PageContent(props: any) {
                 <h1 className=" shadow-sm relative z-10 text-[32px] md:text-[42px] lg:text-[52px] font-bold capitalize">{data?.page?.title} {new Date().getFullYear()}</h1>
             </div>
             <div className="py-[40px] lg:py-[60px] px-5 md:px-[40px] lg:px-[60px] xl:px-[100px]">
+
                 <div className="content" dangerouslySetInnerHTML={{__html: `${data?.page?.content}`}} />
+
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[10px] md:gap-5 pt-[40px]">
 
                     {

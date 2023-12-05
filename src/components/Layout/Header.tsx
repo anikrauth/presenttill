@@ -19,7 +19,7 @@ export default function Header() {
             <Logo />
             <div className="flex items-center">
                 <Link className=" md:block hidden text-[16px] hover:font-medium hover:text-secondary_color text-white_color font-normal pr-[40px]" href="/presenttips">
-                    Present Tips
+                    Presenttips
                 </Link>
                 <button onClick={() => setOpenSearchbar(!openSearchbar)} className="search_wraper flex items-center hover:font-medium hover:text-secondary_color text-white_color ">
                     <BiSearch className="w-6 h-6 text-secondary_color" />

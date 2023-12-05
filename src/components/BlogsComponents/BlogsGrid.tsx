@@ -19,7 +19,7 @@ export default function BlogsGrid(){
 
     return(
         <>
-            <Breadcumb title="Present Tips" logo="" />
+            <Breadcumb title="Presenttips" logo="" />
             <div className="columns-1 md:columns-3 lg:columns-4 gap-5  py-[40px] lg:py-[60px] px-5 md:px-[40px] lg:px-[60px] xl:px-[100px]">
                 {
                     data?.posts?.nodes?.map((item: any) => {

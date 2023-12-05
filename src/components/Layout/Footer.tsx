@@ -20,8 +20,7 @@ export default function Footer() {
 
             <div className="footer_item ">
                 <h3 className="text-[18px]  uppercase font-medium pb-3">COPYRIGHT</h3>
-                <p className="pb-3">Copyright © 2020 Presenttill.nu
-                    Alla rättigheter reserverade</p>
+                <p className="pb-3">Copyright © 2023 Presenttill.nu Alla rättigheter reserverade</p>
                 <p>
                     Presenttill.nu drivs av Itbyggare i Mölndal och AK Hansson Solutions. Allt material är copyright-skyddat och du får inte använda dig av texterna utan lov från utgivaren.
                 </p>
