@@ -308,6 +308,29 @@ query Get_Blog($id: ID!) {
         sourceUrl
       }
     }
+        postsProduct {
+      products {
+        ... on Produkt {
+          id
+          title
+          slug
+          productFiled {
+            storeLink
+          }
+          categories{
+            nodes{
+              id
+              name
+            }
+          }
+          featuredImage{
+            node{
+              sourceUrl
+            }
+          }
+        }
+      }
+    }
     seo {
       metaDesc
       metaKeywords

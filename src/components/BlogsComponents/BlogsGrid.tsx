@@ -19,13 +19,13 @@ export default function BlogsGrid(){
 
     return(
         <>
-            <Breadcumb title="Blogs" logo="" />
+            <Breadcumb title="Present Tips" logo="" />
             <div className="columns-1 md:columns-3 lg:columns-4 gap-5  py-[40px] lg:py-[60px] px-5 md:px-[40px] lg:px-[60px] xl:px-[100px]">
                 {
                     data?.posts?.nodes?.map((item: any) => {
                         return(
                             <div key={item?.id} className="mb-5 productCard_wraper shadow-md bg-white rounded-[12px] overflow-hidden relative">
-                                <Link href={`/blogs/${item?.slug}`} className=" overflow-hidden relative w-full block">
+                                <Link href={`/presenttips/${item?.slug}`} className=" overflow-hidden relative w-full block">
                                     {
                                         item?.featuredImage ? (
                                             <div className="  overflow-hidden flex justify-center items-center">

@@ -6,12 +6,13 @@ import client from "@/lib/ApolloClient";
 import {GET_POST} from "@/lib/Query";
 import Image from "next/image";
 import Block from '@/components/Block'
-
+import ProductItem from "@/components/common/ProductItem";
 import '@wordpress/block-library/build-style/common.css'
 import '@wordpress/block-library/build-style/elements.css'
 import '@wordpress/block-library/build-style/columns/style.css'
 import '@wordpress/block-library/build-style/theme.css'
 import '@wordpress/block-library/build-style/style.css'
+
 
 
 
@@ -31,7 +32,7 @@ export default function SingleBlogContent(props: any){
     });
 
 
-    // console.log(data?.post?.blocks)
+    console.log(data?.post)
 
     return(
         <>
@@ -42,6 +43,18 @@ export default function SingleBlogContent(props: any){
                 </div>
 
                 <div className="blog_content pt-[60px]"  dangerouslySetInnerHTML={{__html: data?.post?.content}} />
+
+                <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-[10px] md:gap-5 pt-[40px]">
+
+                    {
+                        data?.post?.postsProduct?.products?.map((item: any) => {
+                            return(
+                                <ProductItem key={item?.id} item={item} />
+                            )
+                        })
+                    }
+                </div>
+
                 {/*{data?.post?.blocks*/}
                 {/*    ?data?.post?.blocks.map((block: any, index: number) => <Block block={block} key={index} />)*/}
                 {/*    : null}*/}
