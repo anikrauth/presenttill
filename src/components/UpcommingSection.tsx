@@ -26,7 +26,7 @@ export default function UpCommingSection(){
                         <div key={item?.id} className="item bg-secondary_color p-5 text-center rounded-lg" >
                             <h3 className="pb-[10px] text-[18px] md:text-[28px] font-semibold">{item?.title}</h3>
                             <CountDown Endate={item?.specialDyas?.pickSpecialDayDate}/>
-                            <Link className="pt-[20px] block text-primary_color font-medium text-[14px] md:text-[16px]" href={`${item?.url ? item?.url : '/'}`}>{item?.specialDyas?.linkLabel ? item?.specialDyas?.linkLabel : `Se ${item?.title}`}</Link>
+                            <Link className="pt-[20px] block text-primary_color font-medium text-[14px] md:text-[16px]" href={`${item?.specialDyas?.url ? item?.specialDyas?.url : '/'}`}>{item?.specialDyas?.linkLabel ? item?.specialDyas?.linkLabel : `Se ${item?.title}`}</Link>
                         </div>
                     )
                 })
