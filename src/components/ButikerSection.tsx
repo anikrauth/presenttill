@@ -34,7 +34,7 @@ export default function ButikerSection(props: any){
                     <h3 className="text-[22px] md:text-[32px] font-medium pb-[20px]">Butikens egna <span className="text-secondary_color font-semibold ">presenttips</span></h3>
                     <p className="text-[17px] font-normal pb-[30px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
 
-                    <Link className="w-full h-[55px] bg-primary_color text-secondary_color flex justify-center items-center text-[16px] md:text-[18px] font-medium uppercase" href={`/butiker/${slug}`}>
+                    <Link className="w-full h-[55px] bg-primary_color text-secondary_color flex justify-center items-center text-[16px] md:text-[18px] font-medium uppercase" href={data?.butik?.butikerfields?.presenttipsLink ? data?.butik?.butikerfields?.presenttipsLink : '/'}>
                         <span className="pr-2">Besök {data?.butik?.title}</span> <span><FiArrowUpRight className="w-6 h-6" /></span>
                     </Link>
 
@@ -46,7 +46,7 @@ export default function ButikerSection(props: any){
                     <h3 className="text-[22px] md:text-[32px]text-[32px] font-medium pb-[20px]">Butikens <span className="text-secondary_color font-semibold ">kampanjer</span></h3>
                     <p className="text-[17px] font-normal pb-[30px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
 
-                    <Link className="w-full h-[55px] bg-primary_color text-secondary_color flex justify-center items-center text-[16px] md:text-[18px] font-medium uppercase" href={`/butiker/${slug}`}>
+                    <Link className="w-full h-[55px] bg-primary_color text-secondary_color flex justify-center items-center text-[16px] md:text-[18px] font-medium uppercase" href={data?.butik?.butikerfields?.kampanjerLink ? data?.butik?.butikerfields?.kampanjerLink : '/'}>
                         <span className="pr-2">Besök {data?.butik?.title}</span> <span><FiArrowUpRight className="w-6 h-6" /></span>
                     </Link>
 

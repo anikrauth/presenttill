@@ -70,6 +70,7 @@ export default function SidebarOverlay(props: { setOpenSidebar: any, openSidebar
                                 {
                                     data?.menu?.menuItems?.nodes?.map((item: any) => {
                                         return (
+                                            item?.parentId === null &&
                                             <div className="pb-[25px] relative px-5 " key={item?.id}>
                                                 <div className={`flex items-center justify-between ${subMenu === item?.id ? 'text-secondary_colo' : null}`}>
                                                     <Link className={`w-full ${subMenu === item?.id ? 'text-secondary_color font-[600]' : null} hover:text-secondary_color`} href={item?.path}>

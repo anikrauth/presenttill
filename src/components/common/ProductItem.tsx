@@ -51,7 +51,7 @@ export default function ProductItem(props: any){
 
                 <div className="bottom_wraper  border-t-2 pt-2 md:pt-3 mt-2 md:mt-3">
                     <Link href={`/produkt/${item?.slug}`}  type="button" className="  justify-between flex items-center text-[10px] md:text-[13px] font-bold uppercase py-[0px] pl-2 md:pl-[10px] rounded-full border-0 md:border-2 border-buy_button_border bg-primary_color text-secondary_color">
-                        <span className="">SE AKTUELLT PRIS</span> <span className="w-[32px] h-[32px] flex items-center justify-center rounded-full bg-buy_icon_bg border-secondary_color border-2 ml-[5px]"><FiArrowRight className="w-4 h-4 md:w-5 md:h-5" /></span>
+                        <span className=""> SE PRESENTTIPS</span> <span className="w-[32px] h-[32px] flex items-center justify-center rounded-full bg-buy_icon_bg border-secondary_color border-2 ml-[5px]"><FiArrowRight className="w-4 h-4 md:w-5 md:h-5" /></span>
                     </Link>
 
                     <Link href={item?.productFiled?.storeLink ? item?.productFiled?.storeLink : '/'}  type="button" className=" justify-between mt-2 flex items-center text-[10px] md:text-[13px] font-bold uppercase py-[0px] pl-2 md:pl-[10px] rounded-full border-2 border-buy_button_border ">

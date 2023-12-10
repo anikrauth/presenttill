@@ -96,6 +96,11 @@ body{
   font-weight: 600 !important;
   padding-bottom: 30px;
 }
+.wp-block-heading{
+  font-size: 26px;
+  font-weight: 600 !important;
+  padding-bottom: 30px;
+}
 .content .wp-block-columns .wp-block-column h3{
   font-size: 24px;
   font-weight: 600 !important;
@@ -309,8 +314,21 @@ body{
   height: 100%;
   background: rgba(10, 6, 45, 0.73);
 }
+.product_content ol{
+  list-style: decimal;
+  padding-left: 20px;
 
 
+}
+.product_content ol li{
+  padding-bottom: 20px;
+}
+blockquote.wp-block-quote{
+  padding-left: 20px ;
+  border-left: 5px solid;
+  background: #f1f1f1;
+
+}
 
 /**/
 

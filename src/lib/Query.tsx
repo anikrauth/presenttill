@@ -11,8 +11,10 @@ query Get_Header_menu {
           id
           label
           path
+          parentId
           childItems {
             nodes {
+            parentId
               id
               label
               path
@@ -240,6 +242,10 @@ const GET_BUTIK = gql`
     title
     slug
     content
+    butikerfields {
+      presenttipsLink
+      kampanjerLink
+    }
     seo {
       metaDesc
       metaKeywords

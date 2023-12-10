@@ -27,8 +27,8 @@ export default function Footer() {
 
             </div>
             <div className="footer_item	">
-                <Link className="flex items-center text-[17px] font-normal pt-5 pb-3" href="/blogs">
-                    Blogs
+                <Link className="flex items-center text-[17px] font-normal pt-5 pb-3" href="/presenttips">
+                    Presenttips
                 </Link>
                 <h3 className="text-[18px]  uppercase font-medium py-3">FÖLJ OSS</h3>
                 <Link className="flex items-center text-[17px] font-normal " href="https://www.facebook.com/presenttill">
