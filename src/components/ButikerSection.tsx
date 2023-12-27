@@ -19,7 +19,7 @@ export default function ButikerSection(props: any){
             ),
     });
 
-    console.log(data?.butik?.butikerfields)
+
 
     return(
         <>
@@ -42,6 +42,7 @@ export default function ButikerSection(props: any){
                                 </p>
 
                                 <Link
+                                    target="_blank"
                                     className="w-full h-[55px] bg-primary_color text-secondary_color flex justify-center items-center text-[16px] md:text-[18px] font-medium uppercase"
                                     href={data?.butik?.butikerfields?.presenttipsLink ? data?.butik?.butikerfields?.presenttipsLink : '/'}>
                                     <span
@@ -59,6 +60,7 @@ export default function ButikerSection(props: any){
                                 <p className="text-[17px] font-normal pb-[30px]">{data?.butik?.butikerfields?.kampanjerDes}</p>
 
                                 <Link
+                                    target="_blank"
                                     className="w-full h-[55px] bg-primary_color text-secondary_color flex justify-center items-center text-[16px] md:text-[18px] font-medium uppercase"
                                     href={data?.butik?.butikerfields?.kampanjerLink ? data?.butik?.butikerfields?.kampanjerLink : '/'}>
                                     <span
