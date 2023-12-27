@@ -145,6 +145,10 @@ body{
   list-style: disc;
   padding-left: 20px;
 }
+.content ol{
+  list-style: tabular-nums;
+  padding-left: 20px;
+}
 .content li{
   font-size: 16px;
   font-weight: 400;

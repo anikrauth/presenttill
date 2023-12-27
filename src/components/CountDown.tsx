@@ -32,7 +32,7 @@ const CountDown: FC<TimerProps> = (props) => {
     return (
         <>
             {seconds < 0 ? (
-                <p className='text-white text-[11px] md:text-[16px] bg-primary_color uppercase font-medium rounded-[4px] p-2'>You missed out!</p>
+                <p className='text-white text-[11px] md:text-[16px] bg-primary_color uppercase font-medium rounded-[4px] p-2'>Tyvärr för sent!</p>
             ) : (
                 <div className='text-[11px] md:text-[17px]  flex justify-center items-center pt-2'>
                     <div className='rounded-lg mr-2 md:mr-4  p-1  text-[#6B31DF] bg-white flex justify-center items-center'>

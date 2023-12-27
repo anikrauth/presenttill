@@ -236,7 +236,7 @@ query Get_Product( $id: ID!) {
 `;
 
 const GET_BUTIK = gql`
-    query Get_Butik($id: ID!) {
+query Get_Butik($id: ID!) {
   butik(id: $id, idType: SLUG) {
     id
     title
@@ -244,7 +244,11 @@ const GET_BUTIK = gql`
     content
     butikerfields {
       presenttipsLink
+      presenttipsButtonLabel
+      presenttipsDescription
       kampanjerLink
+      kampanjerButtonLabel
+      kampanjerDes
     }
     seo {
       metaDesc
