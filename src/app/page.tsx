@@ -42,6 +42,7 @@ export default function Home() {
     <main>
       <HeroSection />
         <UpCommingSection />
+        <GiftIdeasProductSection />
       <GiftIdeasSection />
         <div className=" py-[40px] md:py-[60px] lg:py-[100px] px-5 md:px-[40px] lg:px-[60px] xl:px-[100px] md:flex justify-center items-center">
             <div className=" w-full md:w-[40%] flex justify-center md:justify-end pr-0 md:pr-20">
@@ -53,7 +54,7 @@ export default function Home() {
                 <p className="text-[16px] font-normal pt-[10px]">Nya butiker och samarbeten kommer in löpande. Fokus ligger på gåvor vid speciella tillfällen, men bland våra presenttips ska du också kunna hitta annorlunda och udda presentförslag. Vi räds inte att ta ut svängarna när det handlar om presenter i alla de slag.</p>
             </div>
         </div>
-        <GiftIdeasProductSection />
+
         <HomeTextSection />
     </main>
   )
